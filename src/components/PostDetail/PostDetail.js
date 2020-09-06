@@ -264,7 +264,7 @@ const PostDetail = () => {
                 {renderMenu}
             </div>
 
-            <div className="post">
+            <div style={{marginLeft: '40px'}}>
                 <h2> '{post.title}'</h2>
                 <p> <strong>Post: </strong> {post.body}</p>
                 <br />

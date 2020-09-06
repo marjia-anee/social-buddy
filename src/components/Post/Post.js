@@ -9,7 +9,8 @@ import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
+    minWidth: 350,
+   
   },
   bullet: {
     display: 'inline-block',
@@ -17,7 +18,7 @@ const useStyles = makeStyles({
     transform: 'scale(0.8)',
   },
   title: {
-    fontSize: 14,
+    fontSize: 16,
   },
   pos: {
     marginBottom: 12,
@@ -46,7 +47,7 @@ const Post = (props) => {
       </CardContent>
       <CardActions>
           <Link to = {`/post/${id}`}> 
-      <Button variant="contained" color="secondary">See more</Button>
+      <Button variant="contained" color="primary">See more</Button>
       </Link>
       </CardActions>
     </Card>

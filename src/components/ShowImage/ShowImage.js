@@ -1,9 +1,13 @@
 import React from 'react';
 
 const ShowImage = (props) => {
+
+    const {image} = props.image;
+    console.log(props);
+    
     return (
         <div>
-            <h2></h2>
+           <img src={image} alt=""/>
         </div>
     );
 };

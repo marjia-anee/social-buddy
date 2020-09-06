@@ -7,7 +7,6 @@ import CardActions from '@material-ui/core/CardActions';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -36,10 +35,10 @@ const useStyles = makeStyles((theme) => ({
         transform: 'rotate(180deg)',
     },
     avatar: {
-        backgroundColor: red[700],
-        width:80,
-        height:80,
+        width:100,
+        height:100,
     },
+    
 }));
 
 const CommentDetails = (props) => {
@@ -47,7 +46,7 @@ const CommentDetails = (props) => {
 
     const classes = useStyles();
 
-    const [image, setImage] = useState([]);
+    const [image, setImage] = useState([fakeData]);
 
     
     useEffect(() => {
@@ -77,7 +76,7 @@ const CommentDetails = (props) => {
       />
       
       <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography variant="body2" color="standard" component="p">
           {body}
         </Typography>
       </CardContent>

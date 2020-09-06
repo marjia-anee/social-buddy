@@ -242,8 +242,6 @@ const Home = () => {
             </div>
 
             <div>
-
-                <h1>posts: {posts.length}</h1>
                 {
                     posts.map(post => <Post post={post}></Post>)
                 }
